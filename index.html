@@ -3,29 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula 1 Ticket Marketing Campaign - Login</title>
+    <title>Formula 1 Ticket Marketing Campaign</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Join the Formula 1 Ticket Marketing Campaign to experience unique racing events and win tickets to live F1 races.">
+    <meta name="keywords" content="Formula 1, F1, racing, tickets, events, marketing campaign, VR racing, live event">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-form">
+    <div class="content-container">
+        <header>
             <img src="F1_Event_Logo_AI.png" alt="Formula 1 Event Logo" class="logo">
-            <h1 style="color: blue;">Welcome to Formula 1 Ticket Marketing Campaign</h1>
-            <p>Please login to access the event details</p>
-            <form action="content.html" method="GET">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="test" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" value="password" required>
-
-                <button type="submit">Login</button>
-            </form>
-            <video width="100%" controls autoplay>
-                <source src="Crowd_People_Buy_Tickets.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+            <h1 class="header-title">Formula 1 Ticket Marketing Campaign</h1>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Welcome to the Ultimate F1 Experience</h2>
+                <p>Join us for an exhilarating journey into the world of Formula 1. Participate in unique competitions and win tickets to live events.</p>
+                <button class="cta-button" onclick="window.location.href='content.html'">Learn More</button>
+            </section>
+            <section class="features">
+                <div class="feature">
+                    <i class="fas fa-ticket-alt fa-3x"></i>
+                    <h3>Win Tickets</h3>
+                    <p>Compete in VR races, knowledge competitions, and more to win exclusive F1 tickets.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-car fa-3x"></i>
+                    <h3>Live Events</h3>
+                    <p>Experience the thrill of driving a real F1 car and meet your favorite drivers live.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-video fa-3x"></i>
+                    <h3>Exclusive Content</h3>
+                    <p>Get behind-the-scenes access and enjoy exclusive content from the world of Formula 1.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Formula 1 Ticket Marketing Campaign. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
