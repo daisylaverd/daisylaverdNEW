@@ -1,60 +1,43 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
-.login-container, .content-container {
-  max-width: 800px;
+.content-container {
+  max-width: 1000px;
   margin: auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.login-form {
+header {
   text-align: center;
-}
-
-.login-form h1 {
-  color: #d32f2f;
-}
-
-.login-form p {
-  font-size: 1.2em;
-}
-
-.login-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.login-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  padding: 10px 20px;
   background-color: #d32f2f;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.login-form button:hover {
-  background-color: #c1272d;
+header .logo {
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
 }
 
 header h1 {
-  color: #d32f2f;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 2.5em;
+  margin: 0;
 }
 
 section {
@@ -63,6 +46,10 @@ section {
 
 section h2 {
   color: #d32f2f;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 5px;
 }
 
 section ul {
@@ -71,276 +58,61 @@ section ul {
 }
 
 section ul li {
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   margin: 5px 0;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+section ul li:hover {
+  background-color: #f0f0f0;
+}
+
+figure {
+  margin: 0;
+}
+
+figure video {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 footer {
   text-align: center;
   margin-top: 20px;
-}
-
-footer p {
-  color: #666;
-}
-
-.event-logo {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-.login-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-form {
-  text-align: center;
-}
-
-.login-form .logo {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.login-form h1 {
-  color: #d32f2f;
-}
-
-.login-form p {
-  font-size: 1.2em;
-}
-
-.login-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.login-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  padding: 10px 20px;
+  padding: 10px 0;
   background-color: #d32f2f;
   color: #fff;
+  font-size: 0.9em;
+}
+
+.return-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 20px 0;
+  transition: background-color 0.3s ease;
 }
 
-.login-form button:hover {
-  background-color: #c1272d;
+.return-button:hover {
+  background-color: #0056b3;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.login-container, .content-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-form, header {
-  text-align: center;
-}
-
-.logo {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.login-form h1, header h1 {
-  color: #d32f2f;
-}
-
-.login-form p {
-  font-size: 1.2em;
-}
-
-.login-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.login-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  padding: 10px 20px;
-  background-color: #d32f2f;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #c1272d;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-section h2 {
-  color: #d32f2f;
-}
-
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section ul li {
-  background-color: #f4f4f4;
-  margin: 5px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-
-footer p {
-  color: #666;
-}
-
-video {
-  margin-top: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-.login-container, .content-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.login-form, header {
-  text-align: center;
-}
-
-.logo {
-  width: 200px;
-  margin-bottom: 20px;
-}
-
-.login-form h1, header h1 {
-  color: #d32f2f;
-}
-
-.login-form p {
-  font-size: 1.2em;
-}
-
-.login-form label {
-  display: block;
-  margin: 10px 0 5px;
-}
-
-.login-form input {
-  width: calc(100% - 20px);
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.login-form button {
-  padding: 10px 20px;
-  background-color: #d32f2f;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.login-form button:hover {
-  background-color: #c1272d;
-}
-
-section {
-  margin-bottom: 20px;
-}
-
-section h2 {
-  color: #d32f2f;
-}
-
-section ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-section ul li {
-  background-color: #f4f4f4;
-  margin: 5px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 20px;
-}
-
-footer p {
-  color: #666;
-}
-
-video {
-  margin-top: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-
